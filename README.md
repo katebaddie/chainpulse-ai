@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# chainpulse-ai
+ChainPulse AI is an AI-powered crypto market intelligence terminal that transforms SoSoValue market data into actionable insights, sentiment analysis, opportunity discovery, and real-time trading intelligence for Web3 users.
+>>>>>>> f4f9efec3497567ed54f2bad5ab005cbc4e99111
 # ⚡ ChainPulse AI
 
 AI-powered crypto market intelligence terminal built with SoSoValue API.
@@ -131,4 +136,8 @@ http://localhost:3000
 
 SoSoValue Buildathon 2026
 
+HEAD
 Built by Katty Labs.
+
+Built by Katty Labs.
+ f4f9efec3497567ed54f2bad5ab005cbc4e99111
