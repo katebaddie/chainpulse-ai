@@ -1,38 +1,37 @@
-<<<<<<< HEAD
-=======
-# chainpulse-ai
-ChainPulse AI is an AI-powered crypto market intelligence terminal that transforms SoSoValue market data into actionable insights, sentiment analysis, opportunity discovery, and real-time trading intelligence for Web3 users.
->>>>>>> f4f9efec3497567ed54f2bad5ab005cbc4e99111
 # ⚡ ChainPulse AI
 
-AI-powered crypto market intelligence terminal built with SoSoValue API.
+AI-powered multi-chain crypto execution terminal built with SoSoValue API and CoinGecko.
 
 ---
 
 ## 🚀 What it does
 
-ChainPulse AI transforms real-time crypto market data into actionable intelligence using AI-powered sentiment analysis, live charts, and automated market insights.
+ChainPulse AI transforms real-time crypto market data into actionable intelligence using AI-powered sentiment analysis, opportunity scoring, smart execution routing, and live market insights from SoSoValue.
 
 Users can:
-- Analyze crypto assets like BTC, ETH, TON
-- View live market charts
-- Read AI-generated market intelligence
-- Detect bullish/bearish sentiment
-- Monitor confidence-based signals
+- Scan any crypto token by symbol or contract address across all chains
+- View live TradingView market charts
+- Read AI-generated market intelligence powered by SoSoValue headlines
+- Detect bullish/bearish sentiment with confidence scoring
+- Discover top opportunities via AI-ranked leaderboard
+- Execute trades via smart DEX/CEX routing
+- Monitor tokens live with auto-refresh every 60 seconds
+- Save tokens to a personal watchlist
 
 ---
 
 ## 🧩 The problem it solves
 
-Crypto market information is scattered across charts, news platforms, and analytics tools. Traders often struggle to quickly understand market sentiment and discover opportunities.
+Crypto market information is scattered across charts, news platforms, analytics tools, and multiple DEX interfaces across different chains. Traders struggle to quickly understand sentiment, discover opportunities, and know where to execute a trade.
 
-ChainPulse AI simplifies this by combining:
-- real-time data
-- AI analysis
-- market intelligence
-- chart visualization
+ChainPulse AI solves this by combining:
+- Real-time market data
+- AI sentiment analysis powered by SoSoValue intelligence
+- Opportunity scoring and risk assessment
+- Smart multi-chain execution routing
+- Live monitoring and watchlist tracking
 
-into one unified dashboard.
+into one unified agentic terminal.
 
 ---
 
@@ -49,28 +48,39 @@ into one unified dashboard.
 - Axios
 
 ### APIs
-- SoSoValue API
+- SoSoValue API — live market intelligence and news headlines
+- CoinGecko API — real-time price, market cap, volume, chain detection
+- Binance API — live ticker for dashboard market strip
 
 ---
 
 ## 🏗️ How we built it
 
-1. Backend fetches market intelligence from SoSoValue API
-2. AI logic processes market sentiment
-3. Frontend displays live charts and structured insights
-4. Dynamic token analysis updates the terminal in real time
+1. Backend fetches live market intelligence headlines from SoSoValue API
+2. CoinGecko API provides real-time price, volume, market cap, and chain data
+3. AI sentiment engine processes SoSoValue headlines and price momentum to generate BUY/SELL/HOLD signals
+4. Opportunity Score (0–100) and Risk Score (0–100) are calculated per token
+5. Smart execution router detects token chain and routes to the correct DEX or CEX
+6. Frontend displays live charts, structured insights, scores, and watchlist across 5 module tabs
 
 ---
 
 ## ⚡ Features
 
-- Live crypto charts
-- AI sentiment analysis
-- Dynamic token search
-- Real-time SoSoValue integration
-- Confidence scoring
-- Multi-token analysis
-- Trading terminal UI
+- Live TradingView charts (loads for every token scanned)
+- AI sentiment analysis (BULLISH / BEARISH / NEUTRAL)
+- Dynamic token search — symbol or contract address
+- Real-time SoSoValue market intelligence integration
+- Confidence scoring per signal
+- Opportunity Score leaderboard (auto-ranked top assets)
+- Risk Score and Risk Level per token
+- Multi-chain detection with highest market cap matching
+- Smart execution routing (Uniswap, Jupiter, PancakeSwap, STON.fi, Binance)
+- Live Monitor — auto-rescan every 60 seconds
+- Signal History — last 5 scans logged with timestamps
+- Watchlist — save, refresh, and track tokens in browser
+- Copy Report — one-click full analysis export
+- 5 module tabs: Dashboard, AI Scanner, Opportunities, Execution Layer, Watchlist
 
 ---
 
@@ -94,13 +104,14 @@ npm install
 Create `.env`
 
 ```env
-SOSO_API_KEY=YOUR_API_KEY
+SOSO_API_KEY=YOUR_SOSOVALUE_API_KEY
+CG_API_KEY=YOUR_COINGECKO_DEMO_API_KEY
 ```
 
 Start backend:
 
 ```bash
-npm start
+node server.js
 ```
 
 ---
@@ -123,12 +134,13 @@ http://localhost:3000
 
 ## 🔮 Future Improvements
 
-- Opportunity discovery engine
-- Risk intelligence layer
-- Smart money tracking
-- SoDEX integration
-- Portfolio analytics
-- AI explanation engine
+- Portfolio analytics and P&L tracking
+- Price alerts and push notifications
+- SoDEX integration for on-chain index data
+- Smart money wallet tracking
+- AI explanation engine with deeper reasoning
+- Mobile-responsive layout
+- Multi-wallet connect and on-chain execution
 
 ---
 
@@ -136,8 +148,4 @@ http://localhost:3000
 
 SoSoValue Buildathon 2026
 
-HEAD
 Built by Katty Labs.
-
-Built by Katty Labs.
- f4f9efec3497567ed54f2bad5ab005cbc4e99111
